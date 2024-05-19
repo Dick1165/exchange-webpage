@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 布局</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #eee;
+        }
+
+        .All-shadow {
+            box-shadow: inset;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .Side-background {
+            background-color: whitesmoke;
+        }
+
+        .Head bar {
+            background-color: azure;
+        }
+
+        .Tip-area-background {
+            background-color: pink;
+        }
+
+        .Message-area-background {
+            background-color: wheat;
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .mg8 {
+            margin: 8px;
+        }
+
+        .mgr8 {
+            margin-right: 8px;
+        }
+
+        .mgt8 {
+            margin-top: 8px;
+        }
+
+        .all-mg {
+            border: 3px solid rgb(105, 34, 127);
+        }
+
+        a1 {
+            text-shadow: 5px 5px 5px #FF0000;
+        }
+    </style>
+</head>
+
+<body class="flex column">
+    <!--顶部区域-->
+    <div style="height: 500px;" class="all-mg">
+        <h1>顶部区域</h1>
+    </div>
+
+    <!--主要显示区域-->
+    <div style="" class="flex all-mg">
+        <!--侧边栏-->
+        <div style="width: 200px" class="Side-background All-shadow all-mg">
+
+            <!--用户区-->
+            <div class="flex">
+                <!--头像区-->
+                <div style="" class="flex1 flex all-mg">
+                    <img src='' alt="" wide="80px" height="50px">
+                </div>
+
+                <!--用户名-->
+                <div style="width: 120px" class="all-mg">
+                    <p>dick-1165</p>
+                </div>
+            </div>
+            <!--筛选区-->
+            <div style="" class="">
+
+            </div>
+        </div>
+
+        <!--主区域-->
+        <div class="all-mg flex1 flex column">
+            <!--头部栏-->
+            <div style="height: 60px;text-align:center;font-size:x-large;" class="Head bar mgt8
+                ">
+                <a1>EXCHANGE</a1>
+            </div>
+
+            <!--内容栏-->
+            <div style="" class="flex1 flex all-mg">
+                <p>内容栏</p>
+            </div>
+
+            <!--左区-->
+            <div style="flex:3;" class="flex column mg8all-mg">
+                <!--数据区-->
+                <div class="flex">
+                    <!--数据块-->
+                    <div style="height: 100px;" claas="flex1 mg"></div>
+
+                    <div style="height: 100px;" claas="flex1 mg"></div>
+
+                    <div style="height: 100px;" claas="flex1 mg"></div>
+
+                    <div style="height: 100px;" claas="flex1 mg"></div>
+
+                </div>
+
+                <!--列表区-->
+                <div class="flex column all-mg">
+                    <p>列表区</p>
+                    <!--列表项-->
+                    <div style="height: 160px;" class="mg"></div>
+
+                    <div style="height: 160px;" class="mg"></div>
+
+                    <div style="height: 160px;" class="mg"></div>
+
+
+                </div>
+            </div>
+
+            <!--右区-->
+            <div style="flex:1;" class="flex column mgr8 all-mg">
+                <!--提示区-->
+                <div style="height: 150px;" class="Tip area background"></div>
+
+                <!--消息区-->
+                <div style="height: 300px;" class="Message area background"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--备案区-->
+    <div style="" class="flex all-mg">
+        <a href="" class="button">
+            <li>1</li>
+        </a>
+        <a href="" class="button">
+            <li></li>
+        </a>
+    </div>
+
+
+</body>
+
+</html>
